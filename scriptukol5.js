@@ -7,12 +7,12 @@ const email = castPrijmeni + castJmena + '@fit.cvut.cz'
 
 const atIndex = email.indexOf('@')
 const parsedEmail = {
-  jmeno: email.slice(0, atIndex),
+  
   domain: email.slice(atIndex + 1),
 }
 
 document.body.innerHTML =
-  '<p>Email: ' + parsedEmail.jmeno + '@' + parsedEmail.domain + '</p>';
+  '<p>Email: ' + jmeno + '@' + parsedEmail.domain + '</p>';
 
 
 
